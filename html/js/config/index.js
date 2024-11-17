@@ -5,6 +5,7 @@ import { configBackgroundMusic } from './background-music.js';
 import { configBackgroundVideos } from './background-videos.js';
 import { configCustomEvents, setupCustomEvents } from './custom-events.js';
 import { configErrorLog, setupErrorLog } from './error-log.js';
+import { configGenerator } from './generator.js';
 import { configMessages } from './messages.js';
 import { configStyle, setupStyle } from './style.js';
 
@@ -28,4 +29,5 @@ export function config(handoverData) {
     configBackgroundEmbed(handoverData);
     configBackgroundMusic(handoverData);
     configAudioControls(handoverData);
+    configGenerator(handoverData);
 }
